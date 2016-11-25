@@ -42,7 +42,10 @@ def print_all_tree_data(tree):
         3
 
     """
-    pass
+    print tree.data
+
+    for child in tree.children:
+        print_all_tree_data(child)
 
 # 3. Write a function that uses recursion to find the length of a list.
 
