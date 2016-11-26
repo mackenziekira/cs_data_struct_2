@@ -96,9 +96,6 @@ def num_nodes(tree):
         6
     """
 
-    if not tree.children:
-        return 1
-
     counter = 1
     for child in tree.children:
         counter += num_nodes(child)
