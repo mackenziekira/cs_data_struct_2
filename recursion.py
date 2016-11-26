@@ -58,10 +58,11 @@ def list_length(my_list):
         4
 
     """
-    if my_list:
-        return 1 + list_length(my_list[1:])
-    else:
+    if not my_list:
         return 0
+
+    return 1 + list_length(my_list[1:])
+ 
 
 
 # 4. Write a function that uses recursion to count how many nodes are in a tree.
@@ -95,7 +96,17 @@ def num_nodes(tree):
         6
     """
 
-    pass
+    if not tree.children:
+        return 1
+
+    counter = 1
+    for child in tree.children:
+        counter += num_nodes(child)
+
+    return counter
+
+
+
 
 #####################################################################
 # END OF ASSIGNMENT: You can ignore everything below.
