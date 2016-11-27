@@ -8,7 +8,7 @@ Recursion is when a function calls itself.
 2
 Why is it necessary to have a base case?
 
-It is necessary to have a base case so that the recursion doesn't go on forever. 
+It is necessary to have a base case so that the recursion doesn't go on forever, with the function forever calling itself. 
 
 
 Graphs
@@ -16,10 +16,14 @@ Graphs
 1
 What is a graph?
 
+A graph consists of nodes connected by edges. The edge connections model the way the information represented by the nodes is connected.
+
 2
 How is a graph different from a tree?
 
-All trees are graphs, but not all graphs are trees. Graphs can have cycles in them, whereas trees cannot. Also tree nodes cannot have more than one parent node, whereas graph nodes can.
+All trees are graphs, but not all graphs are trees. Graphs can have cycles in them, whereas trees cannot. Also tree nodes cannot have more than one parent node, whereas graph nodes can. Also, relationships among graph nodes can be directed or undirected, whereas trees have only directed relationships.
 
 3
 Give an example of something that would be good to model with a graph.
+
+A network of friends on Facebook, or connections on Linkedin.
